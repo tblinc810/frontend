@@ -2,8 +2,8 @@
 import { ref, onMounted } from 'vue';
 import { useCloudStore } from '../stores/cloud';
 import {
-  LucideServer, LucideArrowUp,
-  LucideMessageCircle, LucideX, LucideInfo
+  Server, ArrowUp,
+  MessageCircle, X, Info
 } from 'lucide-vue-next';
 
 // Landing Components
@@ -97,7 +97,7 @@ onMounted(() => {
     <Transition name="slide-up">
       <div v-if="showNotification" class="activity-notification">
         <div class="notif-avatar">
-          <LucideServer class="notif-icon" />
+          <Server class="notif-icon" />
         </div>
         <div class="notif-text">
           <p><strong>Someone</strong> just deployed a VPS in</p>
@@ -110,10 +110,10 @@ onMounted(() => {
     <Transition name="fade">
       <div v-if="showCookie" class="cookie-banner glass-card">
         <div class="c-text">
-          <LucideInfo class="c-info-icon" />
+          <Info class="c-info-icon" />
           <p>We use cookies to optimize your infrastructure experience. <a href="#">Learn more</a></p>
         </div>
-        <button @click="showCookie = false" class="c-close"><LucideX class="icon-s" /></button>
+        <button @click="showCookie = false" class="c-close"><X class="icon-s" /></button>
       </div>
     </Transition>
 
@@ -134,15 +134,15 @@ onMounted(() => {
         </div>
       </Transition>
       <button @click="showChat = !showChat" class="chat-trigger" :class="{ active: showChat }">
-        <LucideMessageCircle v-if="!showChat" class="icon" />
-        <LucideX v-else class="icon" />
+        <MessageCircle v-if="!showChat" class="icon" />
+        <X v-else class="icon" />
       </button>
     </div>
 
     <!-- Scroll to Top -->
     <Transition name="fade">
       <button v-if="showScrollTop" @click="scrollToTop" class="scroll-top" title="Back to Top">
-        <LucideArrowUp class="scroll-icon" />
+        <ArrowUp class="scroll-icon" />
       </button>
     </Transition>
 

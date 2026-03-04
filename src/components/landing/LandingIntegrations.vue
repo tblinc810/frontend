@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import {
-  LucideGithub, LucideTerminal, LucideCpu, LucideCloud, LucideShield, LucideCheckCircle
+  Github, Terminal, Cpu, Cloud, Shield, CheckCircle
 } from 'lucide-vue-next';
 
 const isSubmitted = ref(false);
@@ -21,12 +21,12 @@ const handleWaitlist = () => {
     <section class="integrations">
       <div class="container">
         <div class="integrations-scroll">
-          <div class="integration-item"><LucideGithub class="i-logo" /> GitHub</div>
-          <div class="integration-item"><LucideTerminal class="i-logo" /> Terraform</div>
-          <div class="integration-item"><LucideCpu class="i-logo" /> NVIDIA AI</div>
-          <div class="integration-item"><LucideCloud class="i-logo" /> Kubernetes</div>
-          <div class="integration-item"><LucideShield class="i-logo" /> Cloudflare</div>
-          <div class="integration-item"><LucideTerminal class="i-logo" /> Docker</div>
+          <div class="integration-item"><Github class="i-logo" /> GitHub</div>
+          <div class="integration-item"><Terminal class="i-logo" /> Terraform</div>
+          <div class="integration-item"><Cpu class="i-logo" /> NVIDIA AI</div>
+          <div class="integration-item"><Cloud class="i-logo" /> Kubernetes</div>
+          <div class="integration-item"><Shield class="i-logo" /> Cloudflare</div>
+          <div class="integration-item"><Terminal class="i-logo" /> Docker</div>
         </div>
       </div>
     </section>
@@ -45,19 +45,19 @@ const handleWaitlist = () => {
               <button type="submit" class="btn-primary">Join Waitlist</button>
             </form>
             <div v-else class="waitlist-success">
-              <LucideCheckCircle class="success-icon" />
+              <CheckCircle class="success-icon" />
               <span>You're on the list! We'll reach out soon.</span>
             </div>
 
             <div class="ad-features">
-              <span><LucideCheckCircle class="mini-check" /> Global CDN</span>
-              <span><LucideCheckCircle class="mini-check" /> Kubernetes as a Service <div class="badge-tiny">NEW</div></span>
-              <span><LucideCheckCircle class="mini-check" /> Database Fleet</span>
+              <span><CheckCircle class="mini-check" /> Global CDN</span>
+              <span><CheckCircle class="mini-check" /> Kubernetes as a Service <div class="badge-tiny">NEW</div></span>
+              <span><CheckCircle class="mini-check" /> Database Fleet</span>
             </div>
           </div>
           <div class="ad-visual">
             <div class="glow-box"></div>
-            <LucideCpu class="floating-icon" />
+            <Cpu class="floating-icon" />
           </div>
         </div>
       </div>

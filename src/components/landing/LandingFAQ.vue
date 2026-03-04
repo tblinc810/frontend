@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { LucidePlus, LucideMinus, LucideHelpCircle } from 'lucide-vue-next';
+import { Plus, Minus, HelpCircle } from 'lucide-vue-next';
 
 interface FAQ {
   question: string;
@@ -64,8 +64,8 @@ const toggleFAQ = (index: number) => {
           <div class="faq-question">
             <span>{{ faq.question }}</span>
             <div class="faq-icon">
-              <LucidePlus v-if="!faq.isOpen" class="icon" />
-              <LucideMinus v-else class="icon" />
+              <Plus v-if="!faq.isOpen" class="icon" />
+              <Minus v-else class="icon" />
             </div>
           </div>
           <Transition name="expand">

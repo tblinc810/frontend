@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useCloudStore } from '../../stores/cloud';
-import { LucideFolderBox, LucideChevronDown } from 'lucide-vue-next';
+import { Folders, ChevronDown } from 'lucide-vue-next';
 
 const store = useCloudStore();
 
@@ -15,9 +15,9 @@ const handleSwitch = (projectName: string) => {
 <template>
   <div class="project-selector" v-if="store.userProjects.length > 0">
     <div class="selector-trigger">
-      <LucideFolderBox class="icon" />
+      <Folders class="icon" />
       <span class="current-name">{{ store.currentProjectName || 'Select Project' }}</span>
-      <LucideChevronDown class="chevron" />
+      <ChevronDown class="chevron" />
     </div>
     <div class="project-dropdown">
       <div 

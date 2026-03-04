@@ -10,6 +10,7 @@ const INTERNAL = 'http://192.168.0.250'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/frontend/',
   plugins: [
     vue(),
     vueJsx(),

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { LucideCloud, LucideChevronDown, LucideSun, LucideMoon, LucideChevronRight } from 'lucide-vue-next';
+import { Cloud, ChevronDown, Sun, Moon, ChevronRight } from 'lucide-vue-next';
 
 // You would typically pass customerLogos as a prop or import it from a constant file
 const customerLogos = [
@@ -28,7 +28,7 @@ const customerLogos = [
           </p>
           <div class="cta-group">
             <a href="https://cloud.tblinstance.store/instances/create" class="btn-primary">
-              Get Started <LucideChevronRight class="icon" />
+              Get Started <ChevronRight class="icon" />
             </a>
             <a href="https://cloud.tblinstance.store" class="btn-secondary">
               View Dashboard

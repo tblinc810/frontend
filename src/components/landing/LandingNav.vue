@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { useCloudStore } from '../../stores/cloud';
-import { LucideCloud, LucideGlobe, LucideChevronDown, LucideSun, LucideMoon, LucideMenu, LucideX } from 'lucide-vue-next';
+import { Cloud, Globe, ChevronDown, Sun, Moon, Menu, X } from 'lucide-vue-next';
 
 const store = useCloudStore();
 const menuOpen = ref(false);
@@ -14,7 +14,7 @@ const closeMenu = () => { menuOpen.value = false; };
     <div class="nav-container">
       <!-- Brand -->
       <div class="brand">
-        <LucideCloud class="logo-icon" />
+        <Cloud class="logo-icon" />
         <span>TBL Cloud</span>
         <div class="status-indicator-full">
           <span class="pulse-ring"></span>
@@ -29,14 +29,14 @@ const closeMenu = () => { menuOpen.value = false; };
         <a href="#pricing">Pricing</a>
 
         <div class="lang-switcher">
-          <LucideGlobe class="nav-icon-s" />
+          <Globe class="nav-icon-s" />
           <span>EN</span>
-          <LucideChevronDown class="nav-icon-xs" />
+          <ChevronDown class="nav-icon-xs" />
         </div>
 
         <button @click="store.toggleTheme()" class="theme-btn" title="Toggle Theme">
-          <LucideSun v-if="store.isDark" class="nav-icon" />
-          <LucideMoon v-else class="nav-icon" />
+          <Sun v-if="store.isDark" class="nav-icon" />
+          <Moon v-else class="nav-icon" />
         </button>
 
         <a href="https://cloud.tblinstance.store/login" class="nav-link">Login</a>
@@ -46,13 +46,13 @@ const closeMenu = () => { menuOpen.value = false; };
       <!-- Mobile Right Side -->
       <div class="mobile-nav-right">
         <button @click="store.toggleTheme()" class="theme-btn" title="Toggle Theme">
-          <LucideSun v-if="store.isDark" class="nav-icon" />
-          <LucideMoon v-else class="nav-icon" />
+          <Sun v-if="store.isDark" class="nav-icon" />
+          <Moon v-else class="nav-icon" />
         </button>
         <!-- Hamburger Button -->
         <button class="hamburger-btn" @click="toggleMenu" :class="{ open: menuOpen }">
-          <LucideX v-if="menuOpen" class="nav-icon" />
-          <LucideMenu v-else class="nav-icon" />
+          <X v-if="menuOpen" class="nav-icon" />
+          <Menu v-else class="nav-icon" />
         </button>
       </div>
     </div>

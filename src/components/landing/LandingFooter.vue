@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { LucideCloud, LucideGithub, LucideTwitter, LucideLinkedin } from 'lucide-vue-next';
+import { Cloud, Github, Twitter, Linkedin } from 'lucide-vue-next';
 </script>
 
 <template>
@@ -7,14 +7,14 @@ import { LucideCloud, LucideGithub, LucideTwitter, LucideLinkedin } from 'lucide
     <div class="container footer-grid">
       <div class="footer-col-brand">
         <div class="footer-brand">
-          <LucideCloud class="logo-icon" />
+          <Cloud class="logo-icon" />
           <span>TBL Cloud</span>
         </div>
         <p>Enterprise infrastructure for the modern age. Scalable, reliable, and secure OpenStack solutions.</p>
         <div class="footer-socials">
-          <a href="#" class="fs-link"><LucideGithub class="fs-icon" /></a>
-          <a href="#" class="fs-link"><LucideTwitter class="fs-icon" /></a>
-          <a href="#" class="fs-link"><LucideLinkedin class="fs-icon" /></a>
+          <a href="#" class="fs-link"><Github class="fs-icon" /></a>
+          <a href="#" class="fs-link"><Twitter class="fs-icon" /></a>
+          <a href="#" class="fs-link"><Linkedin class="fs-icon" /></a>
         </div>
       </div>
       <div class="footer-col">

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { LucideCheckCircle } from 'lucide-vue-next';
+import { CheckCircle } from 'lucide-vue-next';
 
 const isAnnual = ref(false);
 </script>
@@ -29,11 +29,11 @@ const isAnnual = ref(false);
             <div class="price">${{ isAnnual ? '4' : '5' }}<span>/mo</span></div>
           </div>
           <ul class="specs">
-            <li><LucideCheckCircle class="check" /> 2 vCPU Cores (Intel Xeon)</li>
-            <li><LucideCheckCircle class="check" /> 4 GB DDR4 RAM</li>
-            <li><LucideCheckCircle class="check" /> 60 GB NVMe Gen4 Storage</li>
-            <li><LucideCheckCircle class="check" /> 2 TB Premium Bandwidth</li>
-            <li><LucideCheckCircle class="check" /> Basic DDoS Protection</li>
+            <li><CheckCircle class="check" /> 2 vCPU Cores (Intel Xeon)</li>
+            <li><CheckCircle class="check" /> 4 GB DDR4 RAM</li>
+            <li><CheckCircle class="check" /> 60 GB NVMe Gen4 Storage</li>
+            <li><CheckCircle class="check" /> 2 TB Premium Bandwidth</li>
+            <li><CheckCircle class="check" /> Basic DDoS Protection</li>
           </ul>
           <a href="https://cloud.tblinstance.store/instances/create?flavor=starter" class="btn-outline">Start Building</a>
         </div>
@@ -46,12 +46,12 @@ const isAnnual = ref(false);
             <div class="price">${{ isAnnual ? '12' : '15' }}<span>/mo</span></div>
           </div>
           <ul class="specs">
-            <li><LucideCheckCircle class="check" /> 6 vCPU Cores (AMD EPYC)</li>
-            <li><LucideCheckCircle class="check" /> 16 GB DDR4 RAM</li>
-            <li><LucideCheckCircle class="check" /> 240 GB NVMe Gen4 Storage</li>
-            <li><LucideCheckCircle class="check" /> 8 TB Premium Bandwidth</li>
-            <li><LucideCheckCircle class="check" /> Weekly Automated Backups</li>
-            <li><LucideCheckCircle class="check" /> Global Anycast IP Support</li>
+            <li><CheckCircle class="check" /> 6 vCPU Cores (AMD EPYC)</li>
+            <li><CheckCircle class="check" /> 16 GB DDR4 RAM</li>
+            <li><CheckCircle class="check" /> 240 GB NVMe Gen4 Storage</li>
+            <li><CheckCircle class="check" /> 8 TB Premium Bandwidth</li>
+            <li><CheckCircle class="check" /> Weekly Automated Backups</li>
+            <li><CheckCircle class="check" /> Global Anycast IP Support</li>
           </ul>
           <a href="https://cloud.tblinstance.store/instances/create?flavor=pro" class="btn-primary">Scale Up Now</a>
         </div>
@@ -63,12 +63,12 @@ const isAnnual = ref(false);
             <div class="price">${{ isAnnual ? '36' : '45' }}<span>/mo</span></div>
           </div>
           <ul class="specs">
-            <li><LucideCheckCircle class="check" /> 12 vCPU Cores (High-Freq)</li>
-            <li><LucideCheckCircle class="check" /> 64 GB DDR4 RAM</li>
-            <li><LucideCheckCircle class="check" /> 1 TB NVMe RAID-10 Storage</li>
-            <li><LucideCheckCircle class="check" /> Unlimited Bandwidth</li>
-            <li><LucideCheckCircle class="check" /> 99.99% Uptime SLA Guarantee</li>
-            <li><LucideCheckCircle class="check" /> 24/7 On-Call Priority Support</li>
+            <li><CheckCircle class="check" /> 12 vCPU Cores (High-Freq)</li>
+            <li><CheckCircle class="check" /> 64 GB DDR4 RAM</li>
+            <li><CheckCircle class="check" /> 1 TB NVMe RAID-10 Storage</li>
+            <li><CheckCircle class="check" /> Unlimited Bandwidth</li>
+            <li><CheckCircle class="check" /> 99.99% Uptime SLA Guarantee</li>
+            <li><CheckCircle class="check" /> 24/7 On-Call Priority Support</li>
           </ul>
           <a href="https://cloud.tblinstance.store/instances/create?flavor=elite" class="btn-outline">Go Enterprise</a>
         </div>

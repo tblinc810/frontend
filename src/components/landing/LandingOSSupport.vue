@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { LucideTerminal } from 'lucide-vue-next';
+import { Terminal } from 'lucide-vue-next';
 </script>
 
 <template>
@@ -18,7 +18,7 @@ import { LucideTerminal } from 'lucide-vue-next';
         </div>
       </div>
       <div class="os-visual">
-         <LucideTerminal class="big-icon" />
+         <Terminal class="big-icon" />
       </div>
     </div>
   </section>
